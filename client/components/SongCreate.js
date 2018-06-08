@@ -8,7 +8,7 @@ import query from '../queries/fetchSongs';
 class SongCreate extends Component{
     constructor(props){
         super(props);
-
+        
         this.state = { title:''};
 
         this.onSubmit=this.onSubmit.bind(this)
@@ -37,7 +37,7 @@ class SongCreate extends Component{
                     <label>Song Title:</label>
                     <input
                         onChange = {event => this.setState({title: event.target.value})}
-                        value = {this.state.value}
+                        // value = {this.state.value}
                     />
                 </form>
             </div>
